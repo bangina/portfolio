@@ -1,0 +1,6 @@
+<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="down btn">
+<circle id="circle" cx="17.5" cy="17.5" r="17.5" transform="rotate(-90 17.5 17.5)" fill="black" fill-opacity="0.7"/>
+<path id="bracket" d="M15 24.1666L21.6667 17.5L15 10.8333" stroke="white"/>
+</g>
+</svg>
