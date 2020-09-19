@@ -13,12 +13,12 @@ function cursor(e) {
 
 navLinks.forEach((link) => {
   link.addEventListener("mouseover", () => {
-    mouseCursor.classList.add("link-grow");
+    mouseCursor.classList.add("cursor-grow");
     mouseCursor.style.zIndex = "-1";
     link.classList.add("hovered-link");
   });
   link.addEventListener("mouseleave", () => {
-    mouseCursor.classList.remove("link-grow");
+    mouseCursor.classList.remove("cursor-grow");
     mouseCursor.style.zIndex = "1000";
     link.classList.remove("hovered-link");
   });
@@ -45,18 +45,15 @@ let trans = () => {
   }, 2000);
 };
 
-//transition
-$(document).ready(function () {
-  $(".transition").stop().animate({
-      opacity: "1",
-      left: "-100%",
-    },
-    1500
-  );
-  $(".transition").stop().animate({
-      opacity: "1",
-      left: "-100%",
-    },
-    1500
-  );
-});
+
+//under construction modal
+//close button
+const closeBtn = document.querySelector(".close-btn");
+const modal = document.querySelector(".construction_modal");
+const modalBg = document.querySelector(".modal-bg");
+
+function closeModal() {
+  modal.style.display = "none";
+  modalBg.style.display = "none";
+}
+closeBtn.addEventListener("click", closeModal);

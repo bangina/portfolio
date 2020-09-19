@@ -44,7 +44,7 @@ body {
     font-size: 16px;
     background: var(--bg-basic);
     color: var(--color-texta);
-    // cursor: none;
+    cursor: none;
 }
 
 .pink {
@@ -53,7 +53,7 @@ body {
 
 /*Transition*/
 .transition {
-    display: none;
+    // display: none;
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -377,18 +377,18 @@ footer {
     background-size: cover;
 }
 
-.cursor-grow {
-    width: 20rem;
-    height: 12rem;
-    border: none;
-    border-radius: 10px;
-    transform: translate(-50%, -110%);
-    transition: 1s;
-    filter: sepia(20%);
-    background-position: center;
-}
+// .cursor-grow {
+//     width: 20rem;
+//     height: 12rem;
+//     border: none;
+//     border-radius: 10px;
+//     transform: translate(-50%, -110%);
+//     transition: 1s;
+//     filter: sepia(20%);
+//     background-position: center;
+// }
 
-.link-grow {
+.cursor-grow {
     transform: scale(2);
     background-color: var(--color-texta);
 }
@@ -398,5 +398,67 @@ footer {
 
     &::after {
         background-image: url("../img/white_dot.svg") !important;
+    }
+}
+
+// under construction modal
+.modal-bg {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+}
+
+.construction_modal {
+    max-width: 800px;
+    width: 100%;
+    min-height: 500px;
+    background: rgb(240, 240, 240);
+    border-radius: 20px;
+    border: 3px solid #000;
+    padding-top: 3rem;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    color: #000;
+
+    hr {
+        border: 1px solid #000;
+    }
+
+    .close-btn {
+        position: absolute;
+        right: 1rem;
+        top: 0.7rem;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+
+    img {
+        width: 250px;
+        margin: 1rem auto;
+    }
+
+    h2,
+    p {
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        padding-top: 2rem;
+    }
+
+    p {
+        font-size: 1.7rem;
+        margin-top: 2rem;
+        padding-bottom: 1.3rem;
     }
 }

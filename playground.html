@@ -1,107 +1,165 @@
 <!DOCTYPE html>
-<html lang="en" data-theme='light'>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@100;400;700;900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/main.css">
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@100;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Ina Bang</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
-    <div class="transition"><img src="./img/logo.svg" alt=""></div>
+  <body>
+    <div class="transition"><img src="./img/logo.svg" alt="" /></div>
     <!-- Header start-->
     <header>
-        <div class="cursor"></div>
-        <div class="header_inner">
-            <h1><a href="index.html">Ina Bang</a></h1>
+      <div class="cursor"></div>
+      <div class="header_inner">
+        <h1><a href="index.html">Ina Bang</a></h1>
 
-            <!-- Global Navigation -->
-            <nav>
-                <ul class="gnb">
-                    <li><a href="#" title="home" class="arctic_scroll pink">Home</a></li>
-                    <li><a href="#work" title="work" class="arctic_scroll">Work</a></li>
-                    <li><a href="#about" class="arctic_scroll">About</a></li>
-                    <li><a href="#playground" class="arctic_scroll">Playground</a></li>
-                </ul>
-            </nav>
+        <!-- Global Navigation -->
+        <nav>
+          <ul class="gnb">
+            <li>
+              <a href="#" title="home" class="arctic_scroll pink">Home</a>
+            </li>
+            <li><a href="#work" title="work" class="arctic_scroll">Work</a></li>
+            <li><a href="#about" class="arctic_scroll">About</a></li>
+            <li><a href="#playground" class="arctic_scroll">Playground</a></li>
+          </ul>
+        </nav>
 
-            <!--        DAY & NIGHT toggle button-->
-            <div class="toggle_box">
-                <span class="toggle_txt"></span>
-                <label><i class="far fa-sun"></i></label>
-                <div class="toggle_bar"><input type="checkbox" name="theme"></div><label><i
-                        class="far fa-moon"></i></label>
-            </div>
+        <!--        DAY & NIGHT toggle button-->
+        <div class="toggle_box">
+          <span class="toggle_txt"></span>
+          <label><i class="far fa-sun"></i></label>
+          <div class="toggle_bar"><input type="checkbox" name="theme" /></div>
+          <label><i class="far fa-moon"></i></label>
         </div>
+      </div>
     </header>
-
 
     <!--  Contents start-->
     <main>
-        <section id="playground">
-            <div class="play-container">
-                <div class="play-box">
-                    <span class="play-box-bg">
-                        <p class="p-title">Meditaion Wep App</p>
-                        <p class="p-desc">that will put you in sleep in 5 minutes.</p>
-                    </span>
-                    <span class="play-box-bg">
-                        <p class="p-title">🍎 Animation</p>
-                        <p class="p-desc">that will put you in sleep in 5 minutes.</p>
-                    </span>
-                </div>
-            </div>
-        </section>
+      <section id="playground">
+        <div class="play-container">
+          <div class="play-box">
+            <span class="play-box-bg">
+              <p class="p-title">Meditaion Wep App</p>
+              <p class="p-desc">that will put you in sleep in 5 minutes.</p>
+            </span>
+            <span class="play-box-bg">
+              <p class="p-title">🍎 Animation</p>
+              <p class="p-desc">that will put you in sleep in 5 minutes.</p>
+            </span>
+          </div>
+        </div>
+      </section>
     </main>
-
 
     <!-- Let's Talk Bubble icon -->
     <div class="talk-box">
-        <input type="checkbox" id="talk-checkbox">
-        <label for="talk-checkbox">
-            <span class="talk-txt">Let's<br>Talk</span>
-            <svg id="talk-bubble" width="63" height="63" viewBox="0 0 63 63" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_d)">
-                    <circle id="bubble-circle" cx="30.1587" cy="30.1587" r="28.1587" fill="#252525" />
-                    <path id="bubble-tail"
-                        d="M58.5032 55.6005C51.1971 53.774 47.3412 44.1848 46.3264 39.6185L36.8134 49.5121C44.7282 58.9491 54.5711 57.5031 58.5032 55.6005Z"
-                        fill="#252525" />
-                </g>
-                <defs>
-                    <filter id="filter0_d" x="0" y="0" width="62.5032" height="62.3174" filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                        <feColorMatrix in="SourceAlpha" type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                        <feOffset dx="1" dy="1" />
-                        <feGaussianBlur stdDeviation="1.5" />
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-                    </filter>
-                </defs>
-            </svg>
-        </label>
+      <input type="checkbox" id="talk-checkbox" />
+      <label for="talk-checkbox">
+        <span class="talk-txt">Let's<br />Talk</span>
+        <svg
+          id="talk-bubble"
+          width="63"
+          height="63"
+          viewBox="0 0 63 63"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_d)">
+            <circle
+              id="bubble-circle"
+              cx="30.1587"
+              cy="30.1587"
+              r="28.1587"
+              fill="#252525"
+            />
+            <path
+              id="bubble-tail"
+              d="M58.5032 55.6005C51.1971 53.774 47.3412 44.1848 46.3264 39.6185L36.8134 49.5121C44.7282 58.9491 54.5711 57.5031 58.5032 55.6005Z"
+              fill="#252525"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_d"
+              x="0"
+              y="0"
+              width="62.5032"
+              height="62.3174"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              />
+              <feOffset dx="1" dy="1" />
+              <feGaussianBlur stdDeviation="1.5" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow"
+                result="shape"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </label>
     </div>
 
     <!--푸터 영역 시작-->
     <footer>
-        <div>Designed and Coded by Ina Bang &copy; 2020</div>
+      <div>Designed and Coded by Ina Bang &copy; 2020</div>
     </footer>
-</body>
-<script src="./js/main.js"></script>
-
+    <script>
+      //transition
+      $(document).ready(function () {
+        $(".transition").stop().animate(
+          {
+            opacity: "1",
+            left: "-100%",
+          },
+          1500
+        );
+        $(".transition").stop().animate(
+          {
+            opacity: "1",
+            left: "-100%",
+          },
+          1500
+        );
+      });
+    </script>
+  </body>
+  <script src="./js/main.js"></script>
 </html>
