@@ -13,12 +13,12 @@ function cursor(e) {
 
 navLinks.forEach((link) => {
   link.addEventListener("mouseover", () => {
-    mouseCursor.classList.add("cursor-grow");
+    mouseCursor.classList.add("link-grow");
     mouseCursor.style.zIndex = "-1";
     link.classList.add("hovered-link");
   });
   link.addEventListener("mouseleave", () => {
-    mouseCursor.classList.remove("cursor-grow");
+    mouseCursor.classList.remove("link-grow");
     mouseCursor.style.zIndex = "1000";
     link.classList.remove("hovered-link");
   });
@@ -44,16 +44,3 @@ let trans = () => {
     document.documentElement.classList.remove("transition");
   }, 2000);
 };
-
-
-//under construction modal
-//close button
-const closeBtn = document.querySelector(".close-btn");
-const modal = document.querySelector(".construction_modal");
-const modalBg = document.querySelector(".modal-bg");
-
-function closeModal() {
-  modal.style.display = "none";
-  modalBg.style.display = "none";
-}
-closeBtn.addEventListener("click", closeModal);

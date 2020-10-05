@@ -37,6 +37,10 @@ html.transition *:before {
     box-sizing: border-box;
 }
 
+a {
+    color: var(--color-textb);
+}
+
 body {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     counter-reset: #252525;
@@ -377,18 +381,18 @@ footer {
     background-size: cover;
 }
 
-// .cursor-grow {
-//     width: 20rem;
-//     height: 12rem;
-//     border: none;
-//     border-radius: 10px;
-//     transform: translate(-50%, -110%);
-//     transition: 1s;
-//     filter: sepia(20%);
-//     background-position: center;
-// }
-
 .cursor-grow {
+    width: 20rem;
+    height: 12rem;
+    border: none;
+    border-radius: 10px;
+    transform: translate(-50%, -110%);
+    transition: 1s;
+    filter: sepia(20%);
+    background-position: center;
+}
+
+.link-grow {
     transform: scale(2);
     background-color: var(--color-texta);
 }
