@@ -3,8 +3,8 @@
 let mouseCursor = document.querySelector(".cursor");
 let navLinks = document.querySelectorAll(".gnb li a");
 
-window.addEventListener("scroll", cursor);
-window.addEventListener("mousemove", cursor);
+// window.addEventListener("scroll", cursor);
+// window.addEventListener("mousemove", cursor);
 
 function cursor(e) {
   mouseCursor.style.top = e.pageY - scrollY + "px";

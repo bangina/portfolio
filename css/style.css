@@ -1,8 +1,8 @@
 /*Dark & Light Theme*/
 html {
   --bg: #fff;
-  --bg-pastel: #EED5B9;
-  --bg-point: #F88B74;
+  --bg-pastel: #eed5b9;
+  --bg-point: #f88b74;
   --bg-basic: #f5f5f5;
   --color-texta: #1d1d1d;
   --color-textb: #fff;
@@ -10,7 +10,7 @@ html {
   --shadow2: rgba(0, 0, 0, 0.3);
 }
 
-html[data-theme='dark'] {
+html[data-theme="dark"] {
   --bg: #000;
   --bg-pastel: rgb(48, 48, 48);
   --bg-point: rgb(232, 191, 183);
@@ -49,7 +49,6 @@ body {
   font-size: 16px;
   background: var(--bg-basic);
   color: var(--color-texta);
-  cursor: none;
 }
 
 .pink {
@@ -352,7 +351,7 @@ footer div {
 }
 
 .toggle_bar input[type="checkbox"]:before {
-  content: '';
+  content: "";
   width: 16px;
   height: 16px;
   background-color: var(--bg-point);

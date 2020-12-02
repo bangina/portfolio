@@ -78,7 +78,7 @@ body {
           transform: translate(5%, 50%);
   min-height: 25rem;
   opacity: 0.8;
-  font-family: 'AmstelvarAlpha Default';
+  font-family: "AmstelvarAlpha Default";
   src: url("/fonts/webfonts/AmstelvarAlpha-VF.woff2");
 }
 
@@ -285,6 +285,12 @@ body {
           transform: scale(1.05);
 }
 
+#work .work-box .work-item:hover .w-title,
+#work .work-box .work-item:hover .w-desc {
+  color: black;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 #work .work-box .work-item::before {
   content: "";
   display: block;
@@ -300,15 +306,15 @@ body {
 }
 
 #work .work-box .work-item:first-child {
-  background-image: url("../img/masspop_main.jpg");
+  background-image: url("../img/yogayo_mockup.png");
 }
 
 #work .work-box .work-item:nth-child(2) {
-  background-image: url("../img/ehwa/ehwa_logo_mockup_03.jpg");
+  background-image: url("../img/masspop_main.jpg");
 }
 
 #work .work-box .work-item:nth-child(3) {
-  background-image: url("../img/seven/seven_beercap_mockup.jpg");
+  background-image: url("../img/ehwa/ehwa_logo_mockup_03.jpg");
 }
 
 #work .work-box .work-item:hover::before {
