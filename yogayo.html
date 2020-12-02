@@ -24,8 +24,7 @@
   </head>
 
   <body>
-    <span class="status"></span>
-    <!-- <div class="transition"><img src="./img/logo.svg" alt="" /></div> -->
+    <!-- <div class="transition"><img src="./img/logo.svg" alt=""></div>  -->
     <!-- Header start-->
     <header>
       <div class="cursor"></div>
@@ -53,38 +52,126 @@
     </header>
 
     <!--  Contents start-->
-    <main>
-      <section id="work">
-        <div class="work-slide-box">
-          <ul class="work-box">
-            <li class="work-item">
-              <a href="yogayo.html" class="work-item-bg">
-                <p class="w-title">요가요</p>
-                <p class="w-desc">React.js, Python Django(DRF), MySQL</p>
-              </a>
-            </li>
-            <li class="work-item">
-              <a href="masspop.html" class="work-item-bg">
-                <p class="w-title">MassPop</p>
-                <p class="w-desc">UI Development</p>
-              </a>
-            </li>
-            <li class="work-item">
-              <a href="fyp.html" class="work-item-bg">
-                <p class="w-title">내게 맞는 식물 찾기</p>
-                <p class="w-desc">Front-end Development & UI Design</p>
-              </a>
-            </li>
-            <li class="work-item">
-              <a href="playground.html" class="work-item-bg">
-                <p class="w-title">
-                  Something<br />Playful<i
-                    class="fas fa-arrow-right arrows next"
-                  ></i>
-                </p>
-              </a>
-            </li>
-          </ul>
+    <main class="work-sub">
+      <section id="work_1">
+        <!-- project concept image -->
+        <div class="concept-img">
+          <h2 class="c-title">요가요</h2>
+          <p class="c-desc">프론트엔드 & 백엔드 개발 / 디자인</p>
+          <span class="scroll-btn">
+            <svg
+              width="35"
+              height="35"
+              viewBox="0 0 35 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="link-btn">
+                <g id="down btn">
+                  <circle
+                    id="circle"
+                    cx="17.5"
+                    cy="17.5"
+                    r="17.5"
+                    fill="black"
+                    fill-opacity="0.7"
+                  />
+                  <path
+                    id="bracket"
+                    d="M10.8333 15L17.5 21.6667L24.1666 15"
+                    stroke="white"
+                  />
+                </g>
+              </g>
+            </svg>
+          </span>
+        </div>
+        <!-- project concept image ends-->
+
+        <!-- project ovverview starts -->
+        <div class="overview">
+          <div class="title-box">
+            <h3 class="p-title">요가요</h3>
+            <p class="p-desc">
+              요가&필라테스 원스탑 예약/커뮤니티 플랫폼 | 2020
+            </p>
+          </div>
+          <div class="ov-box">
+            <div class="img-container"></div>
+            <div class="txt-box">
+              <h4 class="o-title">overview</h4>
+              <p class="o-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+                cupiditate odit? Eligendi exercitationem, autem repellat nam
+                dolorum consectetur perspiciatis beatae quae architecto labore
+                cupiditate laudantium. Distinctio consequatur expedita iure
+                quae.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- project ovverview ends -->
+        <div class="prototype">
+          <img src="./img/macbook_mockup.png" alt="" />
+          <iframe
+            src="http://iina.dothome.co.kr/masspop_temp/landing/masspop_ad.html"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div class="prototype-2">
+          <img src="./img/masspop_iphone_iso.jpg" alt="" />
+        </div>
+        <div class="prototype-3">
+          <video
+            src="./img/masspop_video.mov"
+            autoplay
+            loop
+            muted
+            controls
+          ></video>
+          <img src="./img/iphonex_generic.png" alt="" />
+        </div>
+        <div class="prev-next-container">
+          <!-- <a href="" title="previous project">
+            <strong>prev<br />project</strong>
+            <span class="arrow">
+              <svg
+                width="63"
+                height="23"
+                viewBox="0 0 63 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="Arrow-left">
+                  <g id="Arrow-left_2">
+                    <path
+                      id="Vector_21"
+                      d="M23.5 1L2 22.5H62.5"
+                      stroke="#252525"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </span>
+            <p class="pn-desc">seven brau</p>
+          </a> -->
+          <a href="fyp.html" title="next project">
+            <strong>next<br />project</strong>
+            <span class="arrow">
+              <svg
+                width="62"
+                height="23"
+                viewBox="0 0 62 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="Arrow-right">
+                  <path id="Vector 21" d="M39 1L60.5 22.5H0" stroke="white" />
+                </g>
+              </svg>
+            </span>
+            <p class="pn-desc">Find Your Plant</p>
+          </a>
         </div>
       </section>
     </main>
@@ -161,25 +248,6 @@
     <footer>
       <div>Designed and Coded by Ina Bang &copy; 2020</div>
     </footer>
-    <script>
-      //transition
-      $(document).ready(function () {
-        $(".transition").stop().animate(
-          {
-            opacity: "1",
-            left: "-100%",
-          },
-          1500
-        );
-        $(".transition").stop().animate(
-          {
-            opacity: "1",
-            left: "-100%",
-          },
-          1500
-        );
-      });
-    </script>
   </body>
   <script src="./js/main.js"></script>
 </html>
